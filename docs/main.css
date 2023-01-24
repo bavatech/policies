@@ -1,0 +1,52 @@
+:root {
+  --color: #EA0F5E;
+  --background-color: #FAFAFA;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  font-size: 10px;
+  font-family: Sora, Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--background-color) !important;
+}
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+#preload-portal-loader {
+  z-index: 7000;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: var(--background-color);
+}
+
+#preload-portal-loader > section {
+  display: block;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%) scale(2);
+  -moz-transform: translateX(-50%) translateY(-50%) scale(2);
+  -ms-transform: translateX(-50%) translateY(-50%) scale(2);
+  -o-transform: translateX(-50%) translateY(-50%) scale(2);
+  transform: translateX(-50%) translateY(-50%) scale(2);
+  z-index: 7000;
+  padding: 7px;
+}
+
+#preload-portal-loader > section > svg {
+  display: block;
+  margin: 0 auto;
+}
